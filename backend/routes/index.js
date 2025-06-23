@@ -1,14 +1,12 @@
-// backend/routes/index.js
 import express from 'express';
-import adminRoutes from './admin.routes.js';
-
 const router = express.Router();
 
-router.use('/admin', adminRoutes);
+import adminRoutes from './admin.routes.js';
+import skuRoutes from './sku.routes.js';
+import salesRoutes from './sales.routes.js';
 
-// Optional: fallback route
-// router.all('*', (req, res) => {
-//   res.status(404).json({ message: 'Route not found' });
-// });
+router.use('/admin', adminRoutes);
+router.use('/sku', skuRoutes);
+router.use('/sales', salesRoutes);
 
 export default router;
