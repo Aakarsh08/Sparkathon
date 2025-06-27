@@ -8,6 +8,9 @@ import AdminLogin from './components/Admin/AdminLogin.jsx';
 import AdminDashboard from './components/Admin/AdminDashboard';
 import NotFound from './components/standard/NotFound';
 import { AdminSignup } from './components/Admin/AdminSignup.jsx';
+import SupplierLogin from './components/Supplier/SupplierLogin.jsx';
+import { SupplierSignup } from './components/Supplier/SupplierSignup.jsx';
+import SupplierDashboard from './components/Supplier/SupplierDashboard.jsx';
 
 const App = () => {
   return (
@@ -20,6 +23,9 @@ const App = () => {
           <Route path="/admin-login" element={<AdminLogin />} />
           <Route path="/admin-signup" element={<AdminSignup />} />
           <Route path="/admin-dashboard" element={<AdminDashboard />} />
+          <Route path="/supplier-login" element={<SupplierLogin />} />
+          <Route path="/supplier-signup" element={<SupplierSignup />} />
+          <Route path="/supplier-dashboard" element={<SupplierDashboard />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

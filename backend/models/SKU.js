@@ -30,10 +30,10 @@ const skuSchema = new mongoose.Schema({
         type: mongoose.Types.Decimal128,
         required: true
     },
-    created_at: {
-        type: Date,
-        default: Date.now
-    },
+    // created_at: {
+    //     type: Date,
+    //     default: Date.now
+    // },
     suppliers: [
         {
             supplier: {

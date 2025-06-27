@@ -21,6 +21,11 @@ const NavList = () => (
       </Link>
     </Typography>
     <Typography as="li" variant="small" color="blue-gray" className="p-1 font-medium">
+      <Link to="/supplier-login" className="flex items-center hover:text-blue-500 transition-colors">
+        Supplier
+      </Link>
+    </Typography>
+    <Typography as="li" variant="small" color="blue-gray" className="p-1 font-medium">
       <Link to="/contact" className="flex items-center hover:text-blue-500 transition-colors">
         Contact
       </Link>
